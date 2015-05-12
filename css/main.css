@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background: -webkit-linear-gradient(#FFD4A4, #BF5300); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#FFD4A4, #BF5300); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#FFD4A4, #BF5300); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#FFD4A4, #BF5300); /* Standard syntax */
+}
+.wrapper{
+	min-width: 500px;
+	max-width: 800px;
+	margin: 0 auto 0 auto;
+	background-color: #FFFFFF;
+	box-shadow:rgb(132, 196, 97);
+	overflow: inherit;
+	font-family: 'Balthazar', serif;
+	
+}
+
+h1{
+  margin: 0 auto 0 auto;
+  width: 90%;
+}
+h2{
+}
+p{
+  padding: 2px;
+  font-size: 1.5rem;
+}
+
+ul {
+	margin-left: 0;
+}
+.user{
+	overflow: auto;
+	left: 0;
+}
+
+.user > li{
+	background-color: #FBE1A1;
+	border-color: 3px solid #661E1F;
+	line-height: 50px;
+	margin-bottom: 4px;
+	color: #A71A1D;
+	padding: 5px;
+	scale: none;
+}
+.user > li:hover, .user > li:focus{
+	background-color: #FFD671;
+	transition: 0.4s 0.3s ease-in;
+	border: 1px solid #BF5300;
+	
+	
+}
+
+.user > li .rating{
+	background-color: #FCB44C;
+	color: #FBFBFB;
+	border-radius: 20px;
+    width: 150px;
+    float: right;
+    text-align: center; 
+	box-shadow: #BF5300 2px 2px 2px; 
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: smaller;
+	transform: none;
+	margin-right: 30px;
+}
+
+.user > li:hover, .user > li:hover .rating{
+	color: #BF5300;
+	text-shadow: 1px 2px #FBFBFB;
+}
+.user > li:hover .rating{
+	transform: scale(1.3);
+	transition: 0.4s 0.3s ease-in;
+}
+div.block{
+	display: block;
+}
+
+@media all (min-width: 801px){
+	div, p{
+		margin: 0;
+	}
+	.wrapper{
+		margin: 0;
+		width: 100%;
+		padding-left: 0px;
+	}
+	.dailysummary, .weathertoday{
+		width: 10%;
+	}
+}
+@media all (max-width: 800px){
+	body{
+		margin: 0;
+	}
+	.wrapper{
+		max-width: 800px;
+		margin:0;
+	}
+	
+}
+@media all (max-width: 499px){
+	body, .wrapper{
+		margin: 0;
+	}
+	.wrapper{
+		width: 60%;
+		overflow:hidden;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+/*hail
+thunderstorm
+tornado
+*/
